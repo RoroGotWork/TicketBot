@@ -2,7 +2,7 @@ require('dotenv').config()
 const Bot = require('./src/Bot')
 
 
-const client = new Bot(process.env.TOKEN, process.env.CLIENT_ID, process.env.GUILD_ID, process.env.PREFIX)
+const client = new Bot(process.env.TOKEN, process.env.CLIENT_ID, process.env.GUILD_ID)
 
 client.registerCommands()
 client.registerEvents()
